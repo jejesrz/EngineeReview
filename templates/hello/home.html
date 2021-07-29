@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+
+<body>
+    <div class="hero-bg">
+        <section class="top">
+            <div>
+                <header>
+                    <img src='{% static 'images/engineereview-logo.svg'%}' class = 'belat'>
+                    <a href="#"><span style="color: #66fcf1;">Enginee</span><span style = "color:white;">Review</span></a>
+                </header>
+                <h1>EXCEED YOUR LIMIT</h1>
+                <p>Get access to free lecture notes and test your knowledge with challenging exams.</p>
+            </div>
+        </section>
+        <section class ="forms">
+            <div class="form-container">
+                <form action="">
+                    <p>Start Learning With Us!</p>
+                    <div class="form-left">
+                        <label for="username" class="user-login">USERNAME</label>
+                        <input type="text" name="username" id="username" method="POST" action="login">
+                    </div>
+                </form>
+            </div>
+            <div class="form-container">
+                <form action=""></form>
+                    <label for="password" class="user-login">PASSWORD</label>
+                    <input type="text" name="password" id="password" method="POST" action="login">
+                    <p><a href="#">Forgot password?</a></p>
+                </form>
+                <input type="button" value="LOG IN">
+                <p>or<br><a href="#" style="text-decoration: none; color: white;">SIGN UP</a></p>
+            </div>
+        </section>   
+    </div>
+
+    <section class="engineereview">
+        <div class="right-col">
+            <h2>Why use EngineeReview?</h2>
+        </div>
+        <img src="images/food1.jpg" alt="free">
+        <p>Get free and unlimited access to different study materials.</p>
+        <img src="images/food1.jpg" alt="ask">
+        <p>Ask and answer questions from different users.</p>
+        <img src="images/food1.jpg" alt="test">
+        <p>Test your understanding with challenging exams.</p>
+        <img src="images/food1.jpg" alt="ace">
+        <p>Ace your exams! Show them what you've got.</p>
+    </section>
+
+    <script>
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+        btn.addEventListener('click',() => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+    </script>
+</body>
+</html>

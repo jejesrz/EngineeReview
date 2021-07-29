@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.hero-bg{
+    background: #1F2833 url('../images/engineering.jpg');
+    background-position: 12% 83%;
+    color: black;
+    text-align: center;
+    padding: 4em;
+}
+
+header{
+    padding: 1em 0;
+}
+
+.hero-bg a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+p{
+    color: white;
+    font-weight: bold;
+}
+
+.form-container{
+    background: #45A29E;
+    margin: 2em -5em .5;
+    padding: .5em .5em;
+    font-weight: bold;
+}
+
+input[type=button]{
+    background-color: #0B0C10;
+    border: none;
+    width: 100%;
+    color: #66fcf1;
+    font-weight: bold;
+    padding: 1em 0;
+    border-radius: 5em;
+    font-size: .75em;
+    cursor: pointer;
+}
+
+input[type=text]{
+    border: 1px solid #707070;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 5em;
+    margin-top: .5em;
+}
+
+.engineereview{
+    color: black;
+    text-align: center;
+}
+
+.belat{
+    color: white;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    object-fit: scale-down;
+}
+
+.user-login{
+    text-align: left;
+}
